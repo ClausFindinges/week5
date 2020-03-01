@@ -101,6 +101,15 @@ public class PersonFacadeTest {
         
     }
     
+     @Test
+    public void editPerson() {
+        person2.setLastname("Mikkelsen");
+        Person testperson = facade.editPerson(person2);
+        assertEquals (person2.getLastname(), testperson.getLastname());
+        
+    }
+    
+    
     // Ikke færdig her..
     @Test
     public void testDeletePersonById(){
