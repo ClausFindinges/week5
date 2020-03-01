@@ -59,7 +59,7 @@ public class PersonFacade implements IPersonFacadeInterface {
 
         try {
             Date date = new Date();
-            Person p = new Person(fName, lName, phone, date, date);
+            Person p = new Person(fName, lName, phone);
             em.getTransaction().begin();
             em.persist(p);
 
